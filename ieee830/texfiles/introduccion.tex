@@ -1,0 +1,183 @@
+{
+\newpage
+\section{Introducción}
+En la actualidad, la gestión eficiente de recursos es un aspecto fundamental
+para el buen funcionamiento de cualquier organización. En el contexto educativo, donde 
+las instalaciones deben atender a un número creciente de estudiantes
+y personal, el manejo adecuado de los espacios de estacionamiento se convierte
+en un reto significativo. La falta de un sistema adecuado para la gestión de
+solicitudes y asignación de espacios puede generar inconvenientes tanto para los
+usuarios como para los administradores, resultando en largas filas, pérdida de
+documentos y un control ineficiente de la información.\\
+
+Este documento presenta el desarrollo de un sistema de información computacional 
+que busca optimizar la gestión del estacionamiento en la Unidad
+Académica Profesional Tianguistenco de la Universidad Autónoma del Estado
+de México. El objetivo principal es facilitar el acceso y la organización de la in-
+formación relacionada con las solicitudes de estacionamiento, garantizando una
+experiencia más ágil y eficiente para los beneficiarios.\\
+
+El sistema propuesto se fundamenta en el análisis preliminar de las operaciones 
+actuales y los problemas identificados en la gestión de solicitudes. A
+través de un enfoque en la centralización de datos y la reducción del uso de papel, se espera 
+mejorar la comunicación entre los administradores y los usuarios,
+así como optimizar el tiempo de respuesta a las solicitudes.\\
+
+A lo largo de este documento, se detallarán las características del sistema
+propuesto, su análisis de factibilidad, así como las especificaciones técnicas necesarias 
+para su implementación exitosa.\\
+\subsection{Proposito}
+El propósito de este documento es proporcionar una descripción detallada del
+sistema de información computacional propuesto para la gestión del estacionamiento
+en la Unidad Académica Profesional Tianguistenco de la Universidad Autónoma
+del Estado de México. Este sistema tiene como objetivo principal mejorar
+la eficiencia en la gestión de solicitudes y la asignación de espacios de estacionamiento, facilitando 
+la interacción entre los administradores y los beneficiarios.
+Específicamente, este documento busca:\\
+
+\begin{enumerate}
+
+
+\item { \textbf{Definir los Requerimientos del Sistema}: Establecer las necesidades funcionales 
+	y no funcionales que el sistema debe cumplir para garantizar su
+	efectividad y satisfacción del usuario.}
+	
+\item {\textbf{Identificar Problemas Actuales}: Analizar las deficiencias del sistema
+	actual, resaltando las in eficiencias y los riesgos asociados con la gestión
+	manual de solicitudes y documentos.}
+\item {\textbf{Presentar la Propuesta de Solución: }Describir las características y
+	funcionalidades del sistema propuesto, enfatizando su capacidad para centralizar 
+	la información, automatizar procesos y mejorar la comunicación.}
+
+\item {\textbf{Establecer un Plan de Implementación: }Proporcionar un enfoque
+estratégico para la implementación del sistema, incluyendo fases de desarrollo, 
+recursos necesarios y cronograma.}
+
+\item{\textbf{Facilitar la Evaluación de Factibilidad: }Evaluar la viabilidad técnica y
+	 económica del sistema, asegurando que la solución propuesta sea
+sostenible y beneficiosa para la organización.}
+\end{enumerate}
+A través de este documento, se pretende establecer una base sólida para la toma
+de decisiones en la implementación del sistema, asegurando que se alineen con
+los objetivos estratégicos de la unidad académica y se brinde un servicio de
+calidad a todos los usuarios.
+\subsection{Ambito de sistema }
+\begin{itemize}
+\item{\textbf{Nombre del sistema  :}EstacionaUAPT}
+\item {\textbf{Lo que el sistema hará :} Recibir datos de los usuarios , tener una base
+	de datos de los usuarios,aceptar solicitudes,rechazar solicitudes,exportar
+	a excel los datos de los usuarios ,realizar filtros , posibilidad de editar el
+	talón de estacionamiento.}
+\item {\textbf{Lo que el sistema no hará :}Tomar los datos de los alumnos no han
+	proporcionado y generar los boletos de estacionamiento,realizar registros
+	automáticos , aceptar y rechazar automáticamente solicitudes,}
+	\item{\textbf{Beneficios :}
+	\begin{enumerate}
+\item Eficiencia de la gestión de solicitudes
+\item Ahorro de tiempo para los usuarios
+\item Respuesta rápida
+\item Centralización y seguridad de la información
+\item Reducción del uso de papel
+\item Mejora en la toma de decisiones
+\item Esca labilidad y adaptabilidad
+		\end{enumerate}}
+\item {\textbf{Objetivos} 
+\begin{enumerate}
+\item  Automatizar el proceso de solicitud y asignación de espacios de estacionamiento.
+\item Centralizar la información en una base de datos segura y accesible.
+\item Reducir los tiempos de espera y mejorar la experiencia del usuario.
+\item Eliminar el uso de documentos físicos para contribuir a la sostenibilidad ambiental.
+\item Facilitar el acceso a la información y el monitoreo de solicitudes en
+tiempo real.
+\item Permitir la integración con otros sistemas y servicios institucionales
+en el futuro.
+\item Mejorar la organización y el control de datos para apoyar la toma de
+decisiones
+	\end{enumerate}}	
+\item{\textbf{Metas}
+	\begin{enumerate}
+\item Implementar un sistema web de gestión de estacionamiento en un
+		periodo de seis meses.
+\item Lograr que al menos el 80\% de las solicitudes sean procesadas digitalmente en el primer año.
+\item Reducir en un 50\% el tiempo promedio de respuesta a las solicitudes
+		de estacionamiento.
+\item Disminuir el uso de papel en la gestión de estacionamiento en al
+		menos un 90\%.
+\item Asegurar que el 100\% de los datos de usuarios y vehículos estén almacenados 
+de manera segura y centralizada.
+\item Integrar el sistema con el correo institucional para notificaciones automáticas dentro del primer trimestre de implementación.
+\item Realizar un análisis de satisfacción de usuarios después del primer
+		año de operación para identificar áreas de mejora.
+		
+
+	\end{enumerate}
+	
+}
+\end{itemize}
+\subsection{ Definiciones , Acrónimos y Abreviaturas}
+\subsubsection{Definiciones}
+\begin{itemize}
+	 \item{\textbf{Usuario: }Persona que solicita acceso al sistema de estacionamiento, ya
+	sea estudiante, docente o personal administrativo.}
+\item {\textbf{Administrador: }Persona responsable de gestionar y autorizar las solicitudes de acceso al estacionamiento.}
+\item {\textbf{EstacionaUAPT: }Sistema de gestión de estacionamiento de la
+	Unidad Académica Profesional Tianguistenco.}
+\item{ \textbf{Solicitud de acceso: }Proceso mediante el cual un usuario registra sus
+	datos y documentos para obtener permiso para estacionarse en las instalaciones.}
+
+\item {\textbf{Tarjeta de circulación:} Documento legal que certifica que un vehículo
+	está autorizado para circular}
+	\item { \textbf{Base de datos centralizada: }Almacenamiento estructurado y seguro
+	de la información del sistema, accesible solo por usuarios autorizados.}
+	\item {\textbf{Backend:}Parte de un sistema informático o aplicación web que se encarga de la lógica interna, el procesamiento de datos y la comunicación con bases de datos y otros servicios. }
+
+\end{itemize}
+
+
+\subsubsection{Acrónimos}
+\begin{itemize}
+\item { \textbf{UAPT:} Unidad Académica Profesional Tianguistenco.}
+\item {\textbf{UI:} Interfaz de Usuario (\emph{User Interface}).}
+\item {\textbf{API:} Interfaz de Programación de Aplicaciones (\emph{Application Programming Interface}).}
+\end{itemize}
+\subsubsection{Abreviaturas}
+\begin{itemize}
+\item{ \textbf{Req.:} Requisito.}
+\item{\textbf{Est.:} Estacionamiento.}
+\item{ \textbf{Sist.:} Sistema.}
+\item {\textbf{Doc.: } Documento.}
+\subsection{Referencias}
+\begin{enumerate}
+	\item IEEE Std 830-1998, *IEEE Recommended Practice for Software Requirements Specifications*.
+	\item Reglamento de uso del estacionamiento de la Universidad [Universidad Autonoma Del Estado de Mexico].
+	\item Entrevistas realizadas al personal de seguridad y administración del estacionamiento (fecha: marzo 2025).
+	\item Documento “Requerimientos funcionales preliminares del sistema de estacionamiento”, versión 1.0.
+\end{enumerate}
+
+
+\end{itemize}
+\subsection{ Vision general del documento}
+El presente documento de especificación de requisitos de software(ERS)se
+encuentra organizado en varias secciones que describen de manera estructurada
+los aspectos necesarios para el desarrollo e implementación del sistema de gestión
+del estacionamiento UAPT. A continuación, se ofrece una breve descripción de
+los contenidos de cada sección:
+\begin{itemize}
+	  \item {\textbf{Sección 1: Conceptualización.} Presenta un análisis del sistema actual de operación del estacionamiento, identifica las problemáticas existentes y propone una solución basada en un sistema computacional. Incluye el diagnóstico de los procesos manuales actuales y la justificación de un sistema digital centralizado.}
+	
+\item {\textbf{Sección 2:} Introducción Proporciona un contexto general del proyecto,
+incluyendo su propósito, alcance, definiciones clave, acrónimos, abreviaturas, referencias y esta visión general del contenido.}
+\item {\textbf{Sección 3}: Descripción General Ofrece una visión panorámica del
+sistema, incluyendo la perspectiva del producto, las funciones generales,
+las características de los usuarios, restricciones, supuestos y dependencias,
+así como los requisitos futuros identificados.}
+
+\item {\textbf{Sección 4:} Requisitos Específicos Detalla las interfaces externas,
+las funciones específicas que el sistema debe realizar, los requisitos de
+rendimiento, restricciones de diseño, atributos del sistema y cualquier otro
+requisito identificado.}
+\item {\textbf{ Sección5}: Apéndices Contiene información adicional y complementaria
+al documento, como diagramas, tablas y referencias técnicas, que pueden
+ser útiles para la comprensión de los requisitos especificados.}
+\end{itemize}
+

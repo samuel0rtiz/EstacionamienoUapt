@@ -1,0 +1,18 @@
+# Archivos temporales generados por LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.synctex.gz
+
+# Archivos generados (como PDFs)
+*.pdf
+
+# Archivos de metadatos
+*.fdb_latexmk
+*.fls
+
